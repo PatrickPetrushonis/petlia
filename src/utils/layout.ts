@@ -1,0 +1,22 @@
+// src/utils/layout.ts - Layout utilities
+import { useEffect, useState } from 'react';
+
+export const useFooterPadding = () => {
+  const [footerHeight, setFooterHeight] = useState(0);
+
+  useEffect(() => {
+    const calculateFooterHeight = () => {
+      const footer = document.querySelector('.footer-container');
+      if (footer) {
+        setFooterHeight((footer as HTMLElement).offsetHeight);
+      }
+    };
+
+    calculateFooterHeight();
+    window.addEventListener('resize', calculateFooterHeight);
+    
+    return () => window.removeEventListener('resize', calculateFooterHeight);
+  }, []);
+
+  return footerHeight;
+};
