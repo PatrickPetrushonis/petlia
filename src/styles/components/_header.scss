@@ -9,8 +9,8 @@
   z-index: $header-container;
   opacity: 0;
   
-  background-color: color(primary, dark);
-  border-bottom: 1px solid color(primary, mid);
+  background: linear-gradient(90deg, color(primary, mid), color(secondary, mid));
+  border-bottom: 1px solid color(tertiary, dark);
   transition: all 0.3s ease-out;
 
   &.fixed {
@@ -20,8 +20,6 @@
 
   .button {
     margin: 11px 0;
-    border: none;
-    border-radius: 0;
     font-weight: 700;
   }
 }

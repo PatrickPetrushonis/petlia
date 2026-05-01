@@ -31,8 +31,15 @@
   }
 }
 
-.section__title {
-  text-align: center;
+.section__content--construction {
+  background-color: color(secondary, mid);
+  border: 2px solid color(tertiary, dark);
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 color(gray, jet);
+  color: color(tertiary, light);
+
+  height: 300px;
+  width: 300px;
 }
 
 .section__tabs-container { 

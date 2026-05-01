@@ -1,19 +1,26 @@
 @use '../utilities' as *;
 
 .button {
-    color: color(gray, light);
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
     margin: 22px 0;
     min-width: 80px;
     padding: 11px;
-    text-decoration: none;
+
+    background-color: color(primary, mid);
+    border: 2px solid color(tertiary, dark);
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px 0 color(gray, jet);
+    color: color(tertiary, dark);
     text-align: center;
-    transition: all 0.3s ease-out;
+    text-decoration: none;
+    text-shadow: color(gray, jet) 1px 1px 1px;
+    
+    transition: all 0.2s ease-out;
 
     &:hover { 
-        background-color: color(primary, mild);
+        box-shadow: -5px -5px color(gray, dark) inline;
         text-decoration: none;
     }
 

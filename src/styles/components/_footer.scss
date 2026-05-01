@@ -6,7 +6,8 @@
    left: 0;
    width: 100%;
    min-height: 55px;
-   background-color: color(primary, dark);
+   background: linear-gradient(90deg, color(primary, dark), color(secondary, dark));
+   border-top: 1px solid color(tertiary, dark);
    
    .footer-controls {
       margin: 0 auto;
@@ -21,7 +22,8 @@
    .footer-signature {
       margin: 11px;
       display: inline-block;
-      color: color(gray, light);
+      color: color(tertiary, light);
+      font-weight: 400;
       font-size: 12px;
       line-height: 16px;
 
