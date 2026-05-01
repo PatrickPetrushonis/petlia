@@ -32,14 +32,15 @@
 }
 
 .section__content--construction {
+  height: 300px;
+  padding: 22px;
+  width: 300px;
+  
   background-color: color(secondary, mid);
   border: 2px solid color(tertiary, dark);
   border-radius: 50%;
-  box-shadow: 1px 1px 2px 0 color(gray, jet);
+  box-shadow: -2px -2px 4px 0 rgba(color(gray, jet), 0.5) inset;
   color: color(tertiary, light);
-
-  height: 300px;
-  width: 300px;
 }
 
 .section__tabs-container { 
