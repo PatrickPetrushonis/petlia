@@ -9,21 +9,20 @@
     padding: 11px;
 
     background-color: color(primary, mid);
-    border: 2px solid color(tertiary, dark);
+    border: 2px solid color(gray, light);
     border-radius: 30px;
-    box-shadow: -1px -1px 2px 0 color(gray, jet) inset;
-    color: color(tertiary, dark);
+    box-shadow: 0 0 4px 0 color(tertiary, light);
+    color: color(gray, light);
     text-align: center;
     text-decoration: none;
-    text-shadow: color(gray, jet) 1px 1px 1px;
-    
-    transition: all 0.3s ease-out;
+    text-shadow: rgba(color(gray, light), 0.2) 0 0 0;
+    transition: all 0.2s ease-out;
 
     &:hover { 
-        box-shadow: -1px -1px 1px 0 rgba(color(gray, jet), 0.3) inset;
-        //color: color(gray, light);
+        border: 2px solid color(tertiary, light);
+        box-shadow: 1px 1px 2px 0 rgba(color(gray, jet), 0.5) inset;
         text-decoration: none;
-        text-shadow: rgba(color(gray, jet), 0.5) 1px 1px 1px;
+        text-shadow: color(gray, light) 0px 0px 1px;
     }
 
     &.center { 
